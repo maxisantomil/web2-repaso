@@ -12,11 +12,11 @@ class ViewDestino{
         $smarty->assign('destinos',$destinos);
         $smarty->display('./templates/ver_destinos.tpl');
     }
-    public function DisplayIdDestino($id_destino){
+    public function DisplayIdDestino($id){
         $smarty = new Smarty();
         $smarty->assign('titulo',"DESTINO DEL ID : ");
         $smarty->assign('BASE',URL_IDDESTINO);
-        $smarty->assign('iddestino',$id_destino);
+        $smarty->assign('iddestino',$id);
         $smarty->display('./templates/ver_Iddestino.tpl');
     }
     public function DisplayEdicion($destino,$id){

@@ -14,9 +14,9 @@
             return $obj;
             }
         function getIdDestino($id){
-            $sentencia =$this->db->prepare("SELECT  FROM destino WHERE id_destino=?");
+            $sentencia =$this->db->prepare("SELECT * FROM destino WHERE id_destino=?");
             $sentencia->execute(array($id));
-            $destino=$sentencia->fetch(PDO::FETCH_OBJ);
+            $destino=$sentencia->fetchall(PDO::FETCH_OBJ);
             return $destino;
         }
 

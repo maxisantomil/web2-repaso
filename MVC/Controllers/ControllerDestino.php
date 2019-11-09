@@ -16,7 +16,7 @@
             $this->view->DisplayDestino($destinos);
         }
         public function getIdDestino($id){
-            $destino = $this->model->getDestino($id);
+            $destino = $this->model->getIdDestino($id);
             $this->view->DisplayIdDestino($destino);
         }
         
