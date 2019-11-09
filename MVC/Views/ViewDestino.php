@@ -27,6 +27,14 @@ class ViewDestino{
         $smarty->assign('id',$id);
         $smarty->display('./templates/editar_destinos.tpl');
     }
+
+    public function ModificarDestino($destino){
+        $smarty = new Smarty();
+        $smarty->assign('titulo',"modifico destino");
+        $smarty->assign('BASE',URL_IDDESTINO);
+        $smarty->assign('destino',$destino);
+        $smarty->display('./templates/modificar_destino.tpl');
+    }
 }
 
 ?>

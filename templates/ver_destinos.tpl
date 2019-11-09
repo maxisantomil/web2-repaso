@@ -37,8 +37,10 @@
             <th scope="col">Descripcion</th>
             <th scope="col">Temporada Alta</th>
             <th scope="col">Puntaje</th>
-             <th scope="col">Mostrar Hoteles</th>
+            <th scope="col">Caracteristicas especificas</th>
+            <th scope="col">Mostrar Hoteles</th>
             <th scope="col">borrar</th>
+            <th scope="col">Editar</th>
             </tr>
             </thead>
             {foreach from=$destinos  item=destino}
@@ -51,6 +53,7 @@
                <td><a href='iddestino/{$destino->id_destino}'>Mostrar destino</a></td>
                <td><a href='mostrarHoteles/{$destino->id_destino}'>Mostrar Hoteles</a></td>
                <td><a href='borrarDestino/{$destino->id_destino}'>Borrar</a></td>
+               <td><a href='editarDestino/{$destino->id_destino}'>Editar</a></td>
              </tr>
             {/foreach}
             </tbody>
@@ -86,7 +89,7 @@
                 <input type="text" class="form-control" name="temporada_alta"placeholder="Temporada Alta">
             </div>
             <div class="form-group mx-sm mb-2">
-                <input type="text" class="form-control" name="puntaje"placeholder="Puntaje">
+                <input type="number" class="form-control" name="puntaje"placeholder="Puntaje">
             </div>
             <button type="submit" class="btn btn-primary mb-2">Editar</button>
         </form>

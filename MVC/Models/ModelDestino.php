@@ -16,7 +16,7 @@
         function getIdDestino($id){
             $sentencia =$this->db->prepare("SELECT * FROM destino WHERE id_destino=?");
             $sentencia->execute(array($id));
-            $destino=$sentencia->fetchall(PDO::FETCH_OBJ);
+            $destino=$sentencia->fetch(PDO::FETCH_OBJ);
             return $destino;
         }
 
@@ -33,4 +33,6 @@
             $sentencia->execute(array($nombre,$descripcion,$temp,$puntaje, $id));
             
         }
+
+        
     }

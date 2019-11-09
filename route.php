@@ -53,6 +53,9 @@
             elseif($partesURL[0]=="editarTabla"){
                 $controller->ModificarItem();
             }
+            elseif($partesURL[0]=="editarDestino"){
+                $controller->ModificarItemDestino($partesURL[1]);
+            }
             
             elseif($partesURL[0] == "login") {
                 $controllerUser->Login();
