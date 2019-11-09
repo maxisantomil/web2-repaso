@@ -47,7 +47,8 @@
                <td>{$destino->nombre}</td>
                <td>{$destino->descripcion}</td>
                <td>{$destino->temporada_alta}</td>
-               <td>{$destino->puntaje}</td> <td><a href='mostrardestino/iddestino/{$destino->id_destino}'>Mostrar destino</a></td>
+               <td>{$destino->puntaje}</td> 
+               <td><a href='iddestino/{$destino->id_destino}'>Mostrar destino</a></td>
                <td><a href='mostrarHoteles/{$destino->id_destino}'>Mostrar Hoteles</a></td>
                <td><a href='borrarDestino/{$destino->id_destino}'>Borrar</a></td>
              </tr>
